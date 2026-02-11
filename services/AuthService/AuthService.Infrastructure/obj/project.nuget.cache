@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "8pE1TQjA8FE=",
+  "dgSpecHash": "hzP3td5KCyc=",
   "success": true,
   "projectFilePath": "C:\\Users\\basit\\Desktop\\EnterpriseApp\\services\\AuthService\\AuthService.Infrastructure\\AuthService.Infrastructure.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\basit\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\basit\\.nuget\\packages\\microsoft.extensions.configuration\\10.0.3\\microsoft.extensions.configuration.10.0.3.nupkg.sha512",
     "C:\\Users\\basit\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\10.0.3\\microsoft.extensions.configuration.abstractions.10.0.3.nupkg.sha512",
     "C:\\Users\\basit\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.0\\microsoft.extensions.dependencyinjection.abstractions.10.0.0.nupkg.sha512",

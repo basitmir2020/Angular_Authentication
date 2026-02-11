@@ -1,13 +1,14 @@
 ﻿using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using AuthService.Application.Interfaces;
 using AuthService.Domain.Entities;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 
 namespace AuthService.Infrastructure.Services;
 
-public class JwtService
+public class JwtService : IJwtService
 {
     private readonly IConfiguration _config;
 
@@ -15,8 +16,8 @@ public class JwtService
     {
         _config = config;
     }
-    
-    public string GenerateToken(User user)
+
+    public string GenerateAccessToken(User user)
     {
         var claims = new[]
         {
@@ -39,4 +40,9 @@ public class JwtService
 
         return new JwtSecurityTokenHandler().WriteToken(token);
     }
+
+    public string GenerateRefreshToken()
+        => Guid.NewGuid().ToString();
+    
+   
 }
